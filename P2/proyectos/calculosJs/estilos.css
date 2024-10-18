@@ -8,6 +8,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background-image: url(imagen1.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     height: 100vmax;
 }
 
@@ -27,6 +28,7 @@ h2{
     font: size 2vw;;
     font-weight: normal;
     font-style: italic;
+    background-color: rgba(250, 235, 215, 0.425);
 
 }
 
@@ -37,3 +39,43 @@ form{
     font-size: 2vw;
 
 }
+
+hr{
+    color: blueviolet;
+}
+
+.caja1{
+    font-size: 2vw;
+    font-weight: bolder;
+    color: black ;
+    width: auto;
+    width: 5%;
+}
+
+#tipo{
+    width: auto;
+}
+
+#boton{
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    padding: 2vw;
+    font-size: 2vw;
+    background-color: rgb(194, 193, 228);
+    border-radius: 10%;
+    border: 1px rgb(194, 193, 228);
+    color: white;
+}
+
+#boton:hover{
+    background-color: black;
+    border: 1px solid black;
+}
+
+#boton:active{
+    background-color: green;
+    border: 1px solid green;
+    color: black;
+}
+
+

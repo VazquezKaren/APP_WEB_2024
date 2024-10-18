@@ -15,13 +15,14 @@ function operaciones()
             case "/":ope=n1/n2;break;
             
         }
-        let respuestas=document.getElementById("resultado").innerHTML=`<h3>${n1} ${tipoope} ${n2}=${ope}</h3>`
+        respuestas=document.getElementById("resultado").innerHTML=`<h2>Ingresa solo numeros</h2>`
     }
     else
-    
+    {
         //let respuestas=document.getElementById("resultado");
-        //respuestas.innerHTML=`<h3>Ingresa solo numeros</h3>`
+        respuestas=document.getElementById("resultado").innerHTML=`<h2>Ingresa solo numeros</h2>`
         alert('Ingresa solo numeros')
+    }
     
     
 }
