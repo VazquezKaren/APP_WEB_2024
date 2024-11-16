@@ -1,0 +1,546 @@
+/* Aplicar estilos generales  */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Aplicar los estilos del Header */
+
+#inicio{
+    background-image: url(../img/JpnsRsrcs_screenshot_6.jpg);
+    height: 100vmin;
+    background-size: cover;
+}
+#inicio2{
+    background-image: url(../img/equipomaria.JPG);
+    height: 100vmin;
+    background-size: cover;
+}
+#inicio3{
+    background-image: url(../img/hospital.jpg);
+    height: 100vmin;
+    background-size: cover;
+}
+
+.contenedor{
+    margin: auto;
+    width: 90%;
+    max-width: 1920px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu p{
+    display: inline;
+    font-size: 2vmax;
+    color: black;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+
+}
+
+.lista{
+    display: flex;
+    list-style-type: none;
+    font-size: 1.5vw;
+    
+}
+
+.lista li{
+    margin-left: 1.5vw;
+    justify-content: center;
+    
+}
+
+.btn-menu{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.5vw;
+    color: white;
+
+}
+
+.btn-menu:hover{
+    cursor: pointer;
+    color: white;
+    font-size: 1.6vw;
+    border: 1px solid black;
+    text-decoration: underline;
+}
+
+.btn-menu:active{
+    color: #f0ea328a;
+}
+
+.titular{
+    margin-top: 12rem;
+    text-align: center;
+}
+
+.titular h1{
+    font-size: 4vw;
+    margin: 0;
+    color: white;
+}
+
+.titular h2{
+    font-size: 2.5vw;
+    margin-bottom: 4vw;
+    color: white;
+}
+
+
+.titular2 h1{
+    font-size: 4vw;
+    margin: 0;
+    color: black;
+}
+
+.titular2 h2{
+    font-size: 2.5vw;
+    margin-bottom: 4vw;
+    color: black;
+}
+
+.btn{
+    background-color: #5db8f8;
+    padding: 2vw;
+    font-size: 1vw;
+    color: white;
+    text-decoration: none;
+    
+}
+
+.btn:hover{
+    font-size: 1.1vw;
+}
+
+.btn:active{
+    background-color: #f0ea328a;
+    color: black;
+}
+
+
+.contenedor h3{
+    margin-top: 3rem;
+    font-size: 7vmin;
+    text-align: center;
+    font-weight: bold;
+    margin: 100px;
+}
+
+.contenedor-sobremi img{
+    
+    width: 40vw;
+
+}
+
+
+
+.contenedor-parrafo-y-boton{
+    width: 45%;
+}
+
+.contenedor-parrafo-y-boton p{
+    font-size: 1.5vw;
+    color: black;
+    text-align: justify;
+    margin-bottom: 6rem;
+
+}
+
+.contenedor-sobremi{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+
+
+/* APLICAR ESTILOS A LA SECCION "SERVICIOS" */
+
+#bd{
+    margin-top: 100px;
+    background-color: #f2d4ed;
+    text-align: center;
+    padding: 50px;
+}
+
+
+.contenedor img {
+    max-width: 550px; /* Ajusta el tamaño de la imagen según sea necesario */
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.contenedor-servicios p {
+    flex: 1; 
+    font-size: 40px;
+    text-align: justify;
+    margin: 60px;
+}
+
+
+/* Aplicar estilos a el atributo class */
+
+[class^="icon-"]{
+    font-size:5vmin;
+    float: right;
+}
+
+.icon-arrow-up{
+    color: #5db8f8;
+    margin-left: 2rem;
+    float: left;
+    text-decoration: none;
+    font-size: 5vmin;
+}
+
+
+/* Aplicar estilos al pie */
+
+.burbujas{
+    text-align: center;
+}
+
+.burbujaall img{
+    width: 5vmin;
+    height: 5vmin;
+}
+
+.burbujas p{
+    font-size: 1.5vw;
+}
+
+
+#trabajos {
+    margin-top: 100px;
+    background-color: #D4E9F2;
+    text-align: center;
+    padding: 50px;
+}
+
+
+#trabajos .contenedor-fijo {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 40px;
+    margin: 20px;
+    
+}
+#trabajos h3 {
+    font-size: 3em; 
+    color: #ffffff;
+    margin-bottom: 40px;
+    text-shadow: 
+        0 0 5px #3c46ff,    
+        0 0 10px #3c46ff,   
+        0 0 15px #3c46ff,   
+        0 0 20px #3c46ff,   
+        0 0 25px #3c46ff;  
+}
+.recuadro {
+    background-color: violet;
+    color: #D4E9F2;
+    padding: 50px;
+    border-radius: 15px;
+    position: relative;
+    overflow: visible;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.recuadro h5 {
+    color: black;
+    font-size: 35px;
+    text-align: center;
+}
+
+.recuadro p {
+    color: white;
+    width: 100%;
+    font-size: 25px;
+    text-align: justify;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.expand {
+    display: none;
+}
+
+.expand-label {
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #D4E9F2;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: auto;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.expand-label:hover {
+    background-color: #177b9f; 
+    color: #333; 
+}
+
+.expand-label:after {
+    content: "Ver imágenes";
+    color: black;
+    font-size: 20px;
+}
+
+.expand-imagenes {
+    display: none;
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 10px;
+    width: 100%;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    z-index: 10;
+    box-sizing: border-box;
+}
+
+.expand:checked + .expand-label + .expand-imagenes {
+    display: block;
+}
+
+.slider-img {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+.slider-img img,
+.slider-img iframe {
+    width: 100%;
+    height: auto; 
+    border-radius: 10px;
+}
+
+
+.navigation label {
+    display: none;
+}
+
+.navigation {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.navigation label {
+    color: blacka;
+    font-size: 6em;
+    cursor: pointer;
+    pointer-events: all;
+}
+
+
+
+
+
+#slide1-1:checked ~ .slides {
+    transform: translateX(0%);
+}
+#slide1-2:checked ~ .slides {
+    transform: translateX(-100%);
+}
+#slide1-3:checked ~ .slides {
+    transform: translateX(-200%);
+}
+#slide1-4:checked ~ .slides {
+    transform: translateX(-300%);
+}
+
+
+#slide2-1:checked ~ .slides {
+    transform: translateX(0%);
+}
+#slide2-2:checked ~ .slides {
+    transform: translateX(-100%);
+}
+#slide2-3:checked ~ .slides {
+    transform: translateX(-200%);
+}
+#slide2-4:checked ~ .slides {
+    transform: translateX(-300%);
+}
+
+
+#slide3-1:checked ~ .slides {
+    transform: translateX(0%);
+}
+#slide3-2:checked ~ .slides {
+    transform: translateX(-100%);
+}
+#slide3-3:checked ~ .slides {
+    transform: translateX(-200%);
+}
+
+#slide4-1:checked ~ .slides {
+    transform: translateX(0%);
+}
+#slide4-2:checked ~ .slides {
+    transform: translateX(-100%);
+}
+#slide4-3:checked ~ .slides {
+    transform: translateX(-200%);
+}
+#slide4-4:checked ~ .slides {
+    transform: translateX(-300%);
+}
+
+
+.navigation label {
+    display: none;
+}
+
+#slide1-1:checked ~ .navigation .next[for="slide1-2"],
+#slide1-2:checked ~ .navigation .next[for="slide1-3"],
+#slide1-3:checked ~ .navigation .next[for="slide1-4"],
+#slide1-4:checked ~ .navigation .prev[for="slide1-3"],
+#slide1-3:checked ~ .navigation .prev[for="slide1-2"],
+#slide1-2:checked ~ .navigation .prev[for="slide1-1"] {
+    display: inline-block;
+}
+
+#slide2-1:checked ~ .navigation .next[for="slide2-2"],
+#slide2-2:checked ~ .navigation .next[for="slide2-3"],
+#slide2-3:checked ~ .navigation .next[for="slide2-4"],
+#slide2-4:checked ~ .navigation .prev[for="slide2-3"],
+#slide2-3:checked ~ .navigation .prev[for="slide2-2"],
+#slide2-2:checked ~ .navigation .prev[for="slide2-1"] {
+    display: inline-block;
+}
+
+#slide3-1:checked ~ .navigation .next[for="slide3-2"],
+#slide3-2:checked ~ .navigation .next[for="slide3-3"],
+#slide3-3:checked ~ .navigation .prev[for="slide3-2"],
+#slide3-2:checked ~ .navigation .prev[for="slide3-1"] {
+    display: inline-block;
+}
+
+#slide4-1:checked ~ .navigation .next[for="slide4-2"],
+#slide4-2:checked ~ .navigation .next[for="slide4-3"],
+#slide4-3:checked ~ .navigation .next[for="slide4-4"],
+#slide4-4:checked ~ .navigation .prev[for="slide4-3"],
+#slide4-3:checked ~ .navigation .prev[for="slide4-2"],
+#slide4-2:checked ~ .navigation .prev[for="slide4-1"] {
+    display: inline-block;
+}
+
+/* estilos mis proyectos */
+
+.fotos {
+    margin-top: 0;
+    min-height: 60px;
+    background-color: #ffff84;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.fotos h3 {
+    font-size: 40px;
+    margin-top: 0;
+    color: #ffffff; 
+    text-shadow: 
+        0 0 5px #ff00ff,    
+        0 0 10px #ff00ff,   
+        0 0 15px #ff00ff,   
+        0 0 20px #ff00ff,   
+        0 0 25px #ff00ff;  
+
+}
+
+.proyectos1 p {
+    font-size: 35px;
+    color: black;
+}
+
+.proyectos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh;
+}
+
+.contenedor-proyectos {
+    display: flex;
+    gap: 30px;
+
+}
+
+.tarjeta {
+    position: relative;
+    width: 300px;
+    height: 500px;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    margin: 80px;
+}
+
+.tarjeta:hover {
+    transform: scale(1.05);
+}
+
+.sombra_slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: transform 1s ease;
+}
+
+.slide {
+    min-width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.tarjeta .title {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 24px;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.tarjeta:hover .title {
+    opacity: 1;
+}

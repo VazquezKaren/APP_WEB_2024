@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio de Monedas</title>
+    <script src="calculadora.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <div id="principal">
+        <h2>.: Cambio de Monedas :.</h2>
+        <hr>
+        <form action="">
+            <label for="cantidad">Cantidad a convertir: </label>
+            <input class="caja1" type="number" placeholder="Ingresa un número" id="cantidad" autofocus>
+            <br>
+            <label for="monedaOrigen">Moneda de origen: </label>
+            <select class="caja1" id="monedaOrigen">
+                <option value="MXN" selected>Peso</option>
+                <option value="USD">Dólar</option>
+                <option value="EUR">Euro</option>
+            </select>
+            <br>
+            <label for="monedaDestino">Moneda de destino: </label>
+            <select class="caja1" id="monedaDestino">
+                <option value="MXN" selected>Peso</option>
+                <option value="USD">Dólar</option>
+                <option value="EUR">Euro</option>
+            </select>
+            <br>
+            <input id="boton" type="button" value="Convertir" onclick="convertirMoneda()">
+        </form>
+        <br>
+        <hr>
+        <div id="respuesta"></div>
+    </div>
+</body>
+
+</html>
