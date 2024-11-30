@@ -1,0 +1,22 @@
+{% extends "layouts/layouts.html" %}
+
+{% block title %}
+    {{ title }}
+{% endblock title %}
+
+{% block content %}
+    <h1>{{ title }}</h1>
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{ form.errors }}  <!-- Muestra errores de validación -->
+        
+        {% for field in form %}
+            <div class="mb-3">
+                <label>{{ field.label }}</label>
+                {{ field }}
+            </div>
+        {% endfor %}
+        
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+{% endblock content %}

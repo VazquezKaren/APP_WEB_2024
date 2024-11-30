@@ -1,0 +1,30 @@
+{% extends "layouts/layouts.html" %}
+
+{% block title %}
+    {{title}}
+{% endblock title %}
+
+{% block content %}
+    <h1>{{title}}</h1>
+
+    {% if messages  %}
+        {% for mesage in mesages %}
+            <div class="alert-warning">
+                {{mesage}}
+            </div>
+        {% endfor %}
+    {% endif %}
+
+    <form action="" method="POST">
+        {% csrf_token %}
+
+        <label for="username">Nommbre del usuario:</label>
+        <input type="text" name="username"></input>
+        <label for="password">contraseña:</label>
+        <input type="password" name="password"></input>
+        <input type="submit" value="login"> </input>
+
+    </form>
+   
+{% endblock content %}
+

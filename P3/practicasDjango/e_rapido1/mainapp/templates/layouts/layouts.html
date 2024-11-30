@@ -1,34 +1,43 @@
+
+{% load static %}
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        {% block title %}
-        {% comment %} Aqui va el blocke del titulo {% endcomment %}
-        {% endblock title %}
+    <link rel="stylesheet" href="{% static "css/estilos.css" %}" type="text/css">
 
+    <title>
+        
         
     </title>
-   
 </head>
 <body>
     <h2>Pagina de incicio  </h2>
-    {% block content %}
-    {% comment %} Aqui se maqueta el contenido del bloque content {% endcomment %}
     
-    {% endblock content %}
     <nav>
         <ul>
             <li><a href="{% url "inicio" %}">Inicio</a></li>
             <li><a href="{% url 'acercade' %}">Acerca de Nosotros</a></li>
             <li><a href="{% url 'mision' %}">Misión</a></li>
             <li><a href="{% url 'vision' %}">Visión</a></li>
+            <li><a href="{% url "registro" %}">Registro</a></li>
+            <li><a href="{% url "login" %}">Login</a></li>
+
+
         </ul>
     </nav>
-
-    
-
-    
+    </nav>
+    <section id="content">
+        <div class="box">
+            <h1>Inicio</h1>
+            <hr>
+            <p>{% block content %}{% endblock content %}</p>
+        </div>
+    </section>
+    <footer>
+        <p>Django con Dagonline &copy; 2024 | Visitado el: 01/10/24</p>
+    </footer>
 </body>
 </html>
